@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(ntrip_client)
+project(serial_if)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -20,12 +20,12 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
-add_executable(ntrip_client src/ntrip_client.cpp)
-target_include_directories(ntrip_client PRIVATE include/)
-ament_target_dependencies(ntrip_client rclcpp std_msgs)
+add_executable(serial_if src/serial_if.cpp)
+target_include_directories(serial_if PRIVATE include/)
+ament_target_dependencies(serial_if rclcpp std_msgs)
 
 install(TARGETS
-  ntrip_client
+  serial_if
   DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY
@@ -34,13 +34,14 @@ install(DIRECTORY
 )
 
 if(BUILD_TESTING)
-  #find_package(ament_lint_auto REQUIRED)
+  find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
   # uncomment the line when a copyright and license is not present in all source files
   #set(ament_cmake_copyright_FOUND TRUE)
   # the following line skips cpplint (only works in a git repo)
   # uncomment the line when this package is not in a git repo
   #set(ament_cmake_cpplint_FOUND TRUE)
-  #ament_lint_auto_find_test_dependencies()
+  ament_lint_auto_find_test_dependencies()
 endif()
+
 ament_package()
