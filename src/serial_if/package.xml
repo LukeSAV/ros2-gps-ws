@@ -3,7 +3,7 @@
 <package format="3">
   <name>serial_if</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Creates a serial interface for sending corrections and receieving NMEA formatted data over the same serial line.</description>
   <maintainer email="luke_armbruster@live.com">luke</maintainer>
   <license>TODO: License declaration</license>
 
