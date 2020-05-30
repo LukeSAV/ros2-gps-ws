@@ -3,7 +3,7 @@
 <package format="3">
   <name>ntrip_client</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>NTRIP client for ROS2</description>
   <maintainer email="luke_armbruster@live.com">luke</maintainer>
   <license>TODO: License declaration</license>
 
