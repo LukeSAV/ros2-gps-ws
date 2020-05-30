@@ -14,7 +14,7 @@ def generate_launch_description():
                 'stdout' : 'screen',
                 'stderr' : 'screen'
             },
-            parameters=['/home/luke/service.yaml']
+            parameters=['/var/lib/ntrip-config/service.yaml']
         )
 
     ])

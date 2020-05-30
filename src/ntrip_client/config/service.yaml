@@ -1,0 +1,8 @@
+ntrip_client:
+  ros__parameters:
+    ip_addr: "1.1.1.1"
+    port: 10001
+    mount_point: "NEAREST_RTCM3-GG"
+    reply: False
+    user: "your_username"
+    password: "your_password"
