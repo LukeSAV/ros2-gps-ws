@@ -1,2 +1,2 @@
 # ros2_gps_ws
-GPS related code with simple ROS2 implementation. Include NTRIP client, serial read and write to GPS device.
+GPS related code with simple ROS2 implementation. Includes NTRIP client and serial read/write to GPS device.
